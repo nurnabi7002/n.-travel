@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N. Travel</title>
+  <link rel="stylesheet" href="/dist/output.css">
+  <link rel="stylesheet" href="/src/style.css">
+  <!-- 
+    npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch
+    -->
+</head>
+
+<body>
+
+
+  <header class="w-full flex justify-center items-center">
+    <nav class="flex justify-center items-center gap-[40vw] sm:gap-[400px] p-5 fixed top-0 w-full bg-white z-50">
+
+      <!-- Logo -->
+      <h1 class="text-3xl font-bold">N. Travel</h1>
+
+
+      <!-- Nav Links & Menu -->
+      <div class="flex items-center gap-5">
+        <!-- Menu Icon -->
+        <button class="text-black lg:hidden text-2xl" id="open-btn">&#9776;</button>
+
+        <!-- Nav Links -->
+        <ul class="text-black hidden lg:flex gap-[50px]">
+          <li class="home-btn">Home</li>
+          <li class="service-btn">Service</li>
+          <li class="des-btn">Destinations</li>
+          <li class="contact-btn">Contact</li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- Side Bar -->
+  <div class="sidebar z-10 bg-black p-[80px] text-center absolute top-0 " id="sidebar">
+    <!-- Nav Links -->
+    <ul class="text-white flex flex-col gap-[50px]"> <br>
+      <button id="close-btn">x</button>
+      <li class="home-btn">Home</li>
+      <li class="service-btn">Service</li>
+      <li class="des-btn"> Destinations</li>
+      <li class="contact-btn">Contact</li>
+    </ul>
+  </div>
+
+  <br> <br> <br> <br> <br> <br>
+
+
+  <!-- Nav End Fully -->
+
+  <!-- Hero Section -->
+
+  <section class="w-full flex justify-center items-center" id="home">
+    <div>
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-[100px] p-[25px]">
+        <!-- Text -->
+        <div class="max-w-[700px]">
+          <p class="text-red-600">Best Destinations around the world!</p>
+          <br>
+
+          <!-- Heading -->
+          <h1 class="text-5xl sm:text-7xl font-semibold">Travel, enjoy, and live a new and full life</h1>
+
+          <!-- Paragraph --> <br>
+          <p class="opacity-80">Built Wicket longer admires do Barton vanity itself, do in it. Preferred to sportsmen,
+            it engrossed listening. Park gate sells their west hard for the.</p>
+          <br>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-[25px]">
+            <button type="submit" class="bg-yellow-500 text-white p-[7px] pl-[15px] pr-[15px] rounded-[15px]">Find out
+              more</button>
+            <a href="#" class="flex justify-center gap-3 items-center">
+              <img src="/images/circle-play-solid.svg" alt="play" class="h-[35px]">
+              Play demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <img src="/images/traveler.png" alt="traveler logo" class=" h-[250px] lg:h-[450px]">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Hero Section End -->
+  <br> <br> <br> <br> <br>
+
+  <!-- Service Section  -->
+
+
+  <section class="w-full flex justify-center items-center" id="service-section">
+    <div>
+      <h2 class="text-5xl font-semibold text-center">We Offer Best Services</h2>
+      <br> <br>
+      <div class="service-css">
+
+        <!-- Card 1 -->
+        <div
+          class="w-[85vw] max-w-[300px] service-card p-[30px] rounded-[20px] flex flex-col justify-center items-center gap-[6px] text-center">
+          <!-- Image -->
+          <img src="/images/satellite-dish.png" alt="satellite-dish" class="h-[60px]">
+          <!-- Service -->
+          <h3 class="font-bold text-lg">Calculated Weather</h3>
+          <!-- Paragraph -->
+          <p>Built Wicket longer admires do Barton vanity itself, do in it.</p>
+        </div>
+
+
+
+        <!-- Card 2 -->
+        <div
+          class="w-[85vw] max-w-[300px] service-card p-[30px] rounded-[20px] flex flex-col justify-center items-center gap-[6px] text-center">
+          <!-- Image -->
+          <img src="/images/plane.png" alt="group" class="h-[60px]">
+          <!-- Service -->
+          <h3 class="font-bold text-lg">Best Flights</h3>
+          <!-- Paragraph -->
+          <p>Built Wicket longer admires do Barton vanity itself, do in it.</p>
+        </div>
+
+
+
+
+        <!-- Card 3 -->
+        <div
+          class="w-[85vw] max-w-[300px] service-card p-[30px] rounded-[20px] flex flex-col justify-center items-center gap-[6px] text-center">
+          <!-- Image -->
+          <img src="/images/mic.png" alt="local events" class="h-[60px]">
+          <!-- Service -->
+          <h3 class="font-bold text-lg">Local Events</h3>
+          <!-- Paragraph -->
+          <p>Built Wicket longer admires do Barton vanity itself, do in it.</p>
+        </div>
+
+
+
+
+
+        <!-- Card 4 -->
+        <div
+          class="w-[85vw] max-w-[300px] service-card p-[30px] rounded-[20px] flex flex-col justify-center items-center gap-[6px] text-center">
+          <!-- Image -->
+          <img src="/images/settings.png" alt="Customization" class="h-[60px]">
+          <!-- Service -->
+          <h3 class="font-bold text-lg">Customization</h3>
+          <!-- Paragraph -->
+          <p>Built Wicket longer admires do Barton vanity itself, do in it.</p>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <br> <br> <br> <br> <br> <br> <br>
+
+
+  <!-- Servie Section End -->
+
+
+
+  <!-- Destinations Section -->
+
+  <section class="w-full flex justify-center items-center" id="des-section">
+    <div>
+      <h2 class="text-5xl font-semibold text-center">Top Destinations</h2>
+      <div class="destinations-css p-[10px] sm:p-[50px]">
+
+
+
+        <!-- Card 1 -->
+        <div class="w-[270px] h-[430px] place-card ">
+
+          <!-- Image Div -->
+          <div class="w-full h-[75%] place-img-1"></div>
+
+          <!-- Place and price --> <br>
+          <div class="flex justify-around items-center">
+            <p>Istanbul,Turkey</p>
+            <p>$12k</p>
+          </div>
+
+          <!-- Price -->
+          <div class="flex ml-[15px] gap-[15px] items-center mt-[10px]"><img src="/images/paper-plane-solid.svg"
+              alt="price" class="h-[20px]">
+            <p> 6 Days Trip</p>
+          </div>
+        </div>
+
+
+
+
+
+
+        <!-- Card 2 -->
+        <div class="w-[270px] h-[430px] place-card ">
+
+          <!-- Image Div -->
+          <div class="w-full h-[75%] place-img-2"></div>
+
+          <!-- Place and price --> <br>
+          <div class="flex justify-around items-center">
+            <p>London, UK</p>
+            <p>$2,82k</p>
+          </div>
+
+          <!-- Price -->
+          <div class="flex ml-[15px] gap-[15px] items-center mt-[10px]"><img src="/images/paper-plane-solid.svg"
+              alt="price" class="h-[20px]">
+            <p> 12 Days Trip</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Card 3 -->
+        <div class="w-[270px] h-[430px] place-card ">
+
+          <!-- Image Div -->
+          <div class="w-full h-[75%] place-img-3"></div>
+
+          <!-- Place and price --> <br>
+          <div class="flex justify-around items-center">
+            <p>Full Europe</p>
+            <p>$15k</p>
+          </div>
+
+          <!-- Price -->
+          <div class="flex ml-[15px] gap-[15px] items-center mt-[10px]"><img src="/images/paper-plane-solid.svg"
+              alt="price" class="h-[20px]">
+            <p> 5 Days Trip</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Card 4 -->
+        <div class="w-[270px] h-[430px] place-card ">
+
+          <!-- Image Div -->
+          <div class="w-full h-[75%] place-img-4"></div>
+
+          <!-- Place and price --> <br>
+          <div class="flex justify-around items-center">
+            <p>Rome, Italty</p>
+            <p>$5,42k</p>
+          </div>
+
+          <!-- Price -->
+          <div class="flex ml-[15px] gap-[15px] items-center mt-[10px]"><img src="/images/paper-plane-solid.svg"
+              alt="price" class="h-[20px]">
+            <p> 10 Days Trip</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Section End -->
+  <br> <br> <br> <br> <br> <br>
+
+  <!-- Book Next Trip -->
+
+  <section class="w-full flex justify-center items-center">
+    <div>
+      <div class="flex flex-col justify-center items-center gap-[100px] lg:flex-row p-[20px]">
+
+        <!-- Information -->
+        <div>
+          <!-- Heading -->
+          <h1 class="text-5xl font-bold max-w-[500px]">Book your next trip In 3 easy steps</h1>
+
+          <br> <br>
+          <!-- Cards -->
+          <div class="flex flex-col gap-[30px]">
+
+            <!-- Card 1 -->
+            <div class="flex justify-center items-center gap-[20px] max-w-[450px]">
+              <img src="/images/choose.png" alt="choose" class="h-[50px]">
+              <div>
+                <h3 class="text-lg font-bold">choose destination</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Urna, tortor tempus.</p>
+              </div>
+            </div>
+
+
+
+            <!-- Card 2 -->
+            <div class="flex justify-center items-center gap-[20px] max-w-[450px]">
+              <img src="/images/payment.png" alt="choose" class="h-[50px]">
+              <div>
+                <h3 class="text-lg font-bold">Make Payment</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Urna, tortor tempus.</p>
+              </div>
+            </div>
+
+
+
+            <!-- Card 3 -->
+            <div class="flex justify-center items-center gap-[20px] max-w-[450px]">
+              <img src="/images/reach.png" alt="choose" class="h-[50px]">
+              <div>
+                <h3 class="text-lg font-bold">Reach Airport on Selected Date</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Urna, tortor tempus.</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <!-- Next Trip Card -->
+        <div class="h-[300px] w-[280px] next-trip-css flex flex-col p-[20px]">
+          <!-- Image Div -->
+          <div class="h-[120px] w-[100%] ntci-css"></div>
+
+          <br>
+          <!-- Text -->
+          <h3 class="font-bold">Trip To Greece</h3>
+          <p>14-29 June | by Robbin joseph</p>
+          <br>
+          <div class="flex items-center gap-[80px]">
+            <p class="opacity-65">24 people going</p>
+            <img src="/images/heart-regular.svg" alt="save love fav" class="h-[20px]">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Next Trip Section End -->
+  <br> <br> <br> <br> <br>
+
+
+  <!-- Testimonials Section -->
+
+
+  <section class="w-full flex justify-center items-center">
+    <div>
+      <div class="flex flex-col justify-center gap-[100px] items-center lg:flex-row p-[10px]">
+        <!-- Heading -->
+        <h2 class="font-bold text-6xl max-w-[400px]">What people say
+          About Us.</h2>
+
+        <!-- Card -->
+        <div class="p-[20px] max-w-[300px] shadow-2xl rounded-[10px]">
+          <!-- Information -->
+          <p>“On the Windows talking painted pasture yet its
+            express parties use. Sure last upon he same as
+            knew next. Of believed or diverted no.”</p>
+          <br>
+          <div class="flex justify-center items-center gap-[15px]">
+            <img src="/images/person-image.jpg" alt="client" class="h-[50px] rounded-[25px]">
+            <div>
+              <h3 class="font-bold">Obaidullah</h3>
+              <p>Dhaka,Bangladesh</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials End -->
+
+  <br> <br> <br> <br> <br>
+
+  <!-- Contact -->
+
+  <section class="w-full flex justify-center items-center" id="contact-section">
+    <div>
+
+      <form action="enter-api-or-acton-endpoint-or-link"
+        class="flex flex-col justify-center items-center text-center bg-violet-200 p-[2px] lg:p-[100px] contact-css pt-[150px] gap-[100px] pb-[25px]">
+        <h2 class="text-3xl font-bold sm:text-5xl max-w-[1000px] opacity-75">Subscribe to get information, latest news
+          and other
+          interesting offers about N. Travel</h2>
+
+        <div class="flex justify-center items-center flex-wrap gap-[20px]">
+          <input type="email" name="email" id="email" placeholder="Enter Your Email"
+            class="outline-none bg-white p-[12px] sm:pr-[150px] pl-[15px] rounded-xl">
+          <button type="submit"
+            class="text-white bg-amber-600 p-[12px] pl-[40px] pr-[40px] rounded-xl">Subscribe</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <br> <br> <br> <br> <br>
+
+  <!-- Contact End-->
+
+  <!-- Footer -->
+
+  <footer class="w-full flex justify-center items-center">
+    <div>
+      <div class="footer">
+        <!-- Agency -->
+        <div>
+          <h2 class="font-bold text-2xl">N. Travel</h2> <br>
+          <p>Book your trip in minute, get full <br>
+            Control for much longer.</p>
+        </div>
+
+        <!-- Links 1 -->
+        <div>
+            <h2 class="font-bold text-2xl">Company</h2> <br>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Destination</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Links 2 -->
+        <div>
+           <h2 class="font-bold text-2xl">Contact</h2> <br>
+            <ul>
+              <li><a href="#">Help/FAQ</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Affilates</a></li>
+            </ul>
+        </div>
+
+        <!-- Links 3 -->
+          <div>
+           <h2 class="font-bold text-2xl">More</h2> <br>
+            <ul>
+              <li><a href="#">Airline fees</a></li>
+              <li><a href="#">Airline</a></li>
+              <li><a href="#">Low fare tips</a></li>
+            </ul>
+        </div>
+
+
+      </div> <br>
+          <p class="text-center p-[12px] text-white opacity-75 bg-black w-[100vw]">All rights reserved © N. Travel | Developed By MD Nur Nabi Khan</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="/src/script.js"></script>
+</body>
+
+</html>

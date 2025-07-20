@@ -1,0 +1,225 @@
+/*Universal Style*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/Poppins-Medium.ttf') format('truetype');
+}
+
+/* Nav and Side Bar */
+
+nav ul {
+    background: white;
+    padding: 15px;
+    border-radius: 25px;
+
+}
+
+nav ul li:hover {
+    color: rgb(99, 0, 248);
+    transition: 0.7s;
+    text-decoration: underline;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: black;
+    color: white;
+    padding: 80px;
+    text-align: center;
+    z-index: 10;
+    /* Animation properties (Simple Animation) */
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+/* Service Sectoiom */
+
+.service-css {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+}
+
+
+.service-card {
+    box-shadow: 10px 10px 10px rgb(218, 218, 218);
+}
+
+
+
+
+/* Destinations Section */
+
+.destinations-css {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+
+
+.place-img-1 {
+    background-image: url("/images/place4.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+}
+
+
+.place-img-2 {
+    background-image: url("/images/place2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+}
+
+
+.place-img-3 {
+    background-image: url("/images/place3.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+}
+
+.place-img-4 {
+    background-image: url("/images/place1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+}
+
+
+.place-card {
+    box-shadow: 10px 10px 20px rgb(197, 197, 197);
+    border-radius: 35px;
+    transition: 1s;
+}
+
+
+.place-card:hover {
+    transform: scale(1.04);
+    transition: 0.6s;
+}
+
+
+
+
+
+/* Next Trip */
+.next-trip-css {
+    box-shadow: 15px 15px 30px rgb(182, 205, 247);
+    border-radius: 30px;
+}
+
+.ntci-css {
+    background-image: url("/images/nxt-trip.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    border-radius: 20px;
+}
+
+
+/* Contact */
+
+.contact-css {
+    border-radius: 30px;
+    border-top-left-radius: 150px;
+}
+
+
+/* Footer */
+
+.footer {
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 10px;
+}
+
+
+/* Responsive Stuffs */
+
+@media (min-width: 450px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 700px) {
+    .destinations-css {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+
+
+@media (min-width: 1064px) {
+    .service-css {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .destinations-css {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .footer {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .service-css {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .destinations-css {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 75px;
+    }
+
+}
